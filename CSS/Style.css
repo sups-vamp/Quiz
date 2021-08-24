@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "quiz1 quiz2";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.page-container .quiz-container {
+  padding: 2rem;
+}
+
+.page-container .quiz-container .quiz-body {
+  border: none;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #dbcbcb;
+}
+
+.page-container .quiz-container .quiz-body #quiz-questions-one,
+.page-container .quiz-container .quiz-body #quiz-questions-two {
+  font-family: "Montserrat";
+  font-size: xx-large;
+}
+
+.page-container .quiz-container .quiz-body input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.page-container .quiz-container .quiz-body input[type="text"]:focus {
+  border: 3px solid #555;
+}
+
+.page-container .quiz-container .quiz-body button {
+  border: none;
+}
+
+.page-container .quiz-container .quiz-body .btn {
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+  height: 150px;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  text-align: center;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.page-container .quiz-container .quiz-body .btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-container .quiz-container .quiz-body .btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-container .quiz-container .quiz-body .btn:hover span {
+  padding-right: 25px;
+  font-weight: bold;
+}
+
+.page-container .quiz-container .quiz-body .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.page-container .quiz-container .quiz-body .next {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.page-container .quiz-container .quiz-body .post-quiz {
+  padding: 2rem;
+  font: large "Montserrat";
+}
+
+.page-container .quiz-container .quiz-body .score {
+  margin-top: 10rem;
+  font: x-large "Montserrat";
+  color: #110d0d;
+}
+/*# sourceMappingURL=Style.css.map */

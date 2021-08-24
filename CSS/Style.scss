@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+.page-container {
+    display: grid;
+    grid-template-areas: "quiz1 quiz2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100vh;
+
+    .quiz-container {
+        padding: 2rem;
+
+        .quiz-body {
+            border: none;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(219, 203, 203);
+
+            #quiz-questions-one,
+            #quiz-questions-two {
+                font-family: "Montserrat";
+                font-size: xx-large;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 3px solid #ccc;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                outline: none;
+            }
+
+            input[type="text"]:focus {
+                border: 3px solid #555;
+            }
+            button {
+                border: none;
+            }
+            .btn {
+                border: 2px solid #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 150px;
+                color: white;
+                font-family: "Montserrat";
+                font-size: 2.5rem;
+                text-align: center;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+            }
+            .btn span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .btn span:after {
+                content: "\00bb";
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+            .btn:hover span {
+                padding-right: 25px;
+                font-weight: bold;
+            }
+
+            .btn:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            .next {
+                width: 10rem;
+                height: 3rem;
+                font-size: 1rem;
+                margin: 1rem 0;
+            }
+            .post-quiz {
+                padding: 2rem;
+                font: large "Montserrat";
+            }
+            .score {
+                margin-top: 10rem;
+                font: x-large "Montserrat";
+                color: rgb(17, 13, 13);
+            }
+        }
+    }
+}

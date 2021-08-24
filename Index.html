@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS\style.css" />
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="quiz-container">
+            <div class="quiz-body">
+                <div id="post-quiz-one" class="post-quiz">
+                </div>
+                <div id="pre-quiz-one">
+                    <input type="text" id="qcount-one" placeholder="Enter the number of questions you want to attempt"/>
+                    <input type="text" id="number-limit-one" placeholder="Enter the limit; for eg: 50, 100 etc."/>
+                    <button class="btn" id="quiz-one" onclick="quiz1()">
+                       <span>START QUIZ!</span> 
+                    </button>                  
+                </div>
+                <div id="quiz-time-one">
+                    <div id="quiz-questions-one"></div>
+                    <input type="text" id="answer-one" placeholder="Enter your answer here"/>                
+                        <button class="btn next" id="next-one" onclick="next1()"><span>NEXT</span></button>
+                   <div id="score-one" class="score"></div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-container">
+            <div class="quiz-body">
+                <div id="post-quiz-two" class="post-quiz">
+                </div>
+                <div id="pre-quiz-two">
+                    <input type="text" id="qcount-two" placeholder="Enter the number of questions you want to attempt"/>
+                    <input type="text" id="number-limit-two" placeholder="Range of Number"/>
+                    <button class="btn" id="quiz-two" onclick="quiz2()">
+                        <span>START QUIZ!</span> 
+                    </button>            
+                </div>
+                <div id="quiz-time-two">
+                    <div id="quiz-questions-two"></div>
+                    <input type="text" id="answer-two" placeholder="Enter your answer here"/>
+                        <button class="btn next" id="next-two" onclick="next2()"><span>NEXT</span></button>
+                        <div id="score-two" class="score"></div>
+                </div>
+            </div>
+        </div>
+        <script src="JS/Script.js"></script>
+</body>
+
+</html>
